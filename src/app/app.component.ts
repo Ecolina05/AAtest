@@ -7,9 +7,5 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  env = environment;
-
-  get getEnvironment(): 'Production' | 'Develop' {
-    return this.env.production ? 'Production' : 'Develop'
-  }
+  env: string = environment.env;
 }

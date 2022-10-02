@@ -54,6 +54,14 @@
               ],
               "outputHashing": "all"
             },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -70,6 +78,9 @@
           "configurations": {
             "production": {
               "browserTarget": "test-angular:build:production"
+            },
+            "staging": {
+              "browserTarget": "test-angular:build:staging"
             },
             "development": {
               "browserTarget": "test-angular:build:development"
