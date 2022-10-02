@@ -1,0 +1,18 @@
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .title {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    margin: 5px 0;
+  }
+}
